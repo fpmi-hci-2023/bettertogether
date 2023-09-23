@@ -13,7 +13,7 @@ An online cinema that allows you to watch movies together with synchronisation o
 - [Chapter 1. The Phantom Menace or The Research of the subject area, users and context](https://docs.google.com/document/d/1g5MayIBix5JvDLs_KlKU_qnqlZ8TUfPsWBpAPDqevrE/edit?usp=sharing)
 
 ## Contributing:
-- Pavel Emelyanenko
-- Nikita Venediktov
-- Gleb Polyvyany
-- Marina Serapina
+- [Pavel Emelyanenko](https://github.com/AllerleiMal)
+- [Nikita Venediktov](https://github.com/nizierounicetas)
+- [Gleb Polyvyany](https://github.com/GlobusOffZeWorld)
+- [Marina Serapina](https://github.com/MarinaSerapina)
