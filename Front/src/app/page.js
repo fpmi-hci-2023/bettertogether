@@ -1,5 +1,5 @@
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts') //поменяй адрес на нужный
+  const res = await fetch('https://localhost:7269/hello-world') //поменяй адрес на нужный
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
