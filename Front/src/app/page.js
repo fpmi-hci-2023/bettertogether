@@ -1,9 +1,17 @@
 async function getData() {
-  const res = await fetch('https://localhost:7269/hello-world') //поменяй адрес на нужный
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
+
+  try{
+    const res = await fetch('http://backenddemo:80/hello-world')
+    if (!res.ok) {
+      throw new Error('Failed to fetch data')
+    }
+
+    return res.text()
   }
-  return res.text()
+  catch(er)
+  {
+    console.log(er)
+  }
 }
 
 export default async function Home() {

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TestEnv.Controllers
 {
-    [ApiController]
+
     [Route("hello-world")]
     public class WeatherForecastController : ControllerBase
     {

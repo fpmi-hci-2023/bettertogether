@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  backenddemo:
+    build: ./Back
+    restart: always
+  frontenddemo:
+    build: ./Front
+    restart: always
+    ports:
+      - 3030:3000
