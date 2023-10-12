@@ -1,9 +1,9 @@
-version: "3"
+version: '3'
 
 services:
   backend:
     build: ./BetterTogetherBackend
     restart: always
   ports:
-    - "8080:80"
-    - "4430:443"
+    - '8080:80'
+    - '4430:443'
