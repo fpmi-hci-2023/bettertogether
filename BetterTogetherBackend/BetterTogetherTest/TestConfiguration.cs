@@ -12,7 +12,6 @@ public class TestConfiguration
     [InlineData(-1)]
     [InlineData(0)]
     [InlineData(1)]
-    [InlineData(2)]  // test ci cancelation
     public void DummyTest2(int inputValue)
     {
         var result = Math.Abs(inputValue) <= 1;
