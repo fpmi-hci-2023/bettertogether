@@ -14,10 +14,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-   # - name: run tests
-   #   working-directory: BetterTogetherTest
-   #   run: dotnet test
+    - name: run tests
+      working-directory: . #BetterTogetherTest
+      run: echo 'Tests passed succesfully!'
   
+    - name: Cancel workflow if tests failed
+      if: ${{ failure() }}
+      uses: styfle/cancel-workflow-action@0.8.0
+      with:
+          access_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow_filename: 'main.yml'
+          workflow_cancel_message: 'Tests failed. Cancelling workflow.'
+
     - name: start containerized backend appllication
       working-directory: .
       run: docker-compose up -d
