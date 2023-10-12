@@ -1,0 +1,24 @@
+name: Backend Deployment
+
+on:
+  push:
+    branches: [ "master" ]
+
+  pull_request:
+    branches: [ "master" ]
+
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+   # - name: run tests
+   #   working-directory: BetterTogetherTest
+   #   run: dotnet test
+  
+    - name: start containerized backend appllication
+      working-directory: .
+      run: docker-compose up -d
+  
