@@ -23,7 +23,7 @@ jobs:
       uses: styfle/cancel-workflow-action@0.8.0
       with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow_filename: 'main.yml'
+          workflow_filename: 'test_and_deploy.yml'
           workflow_cancel_message: 'Tests failed. Cancelling workflow.'
 
     - name: run containerized backend appllication
