@@ -16,7 +16,7 @@ jobs:
 
     - name: run tests
       working-directory: . #BetterTogetherTest
-      run: echo 'Tests passed succesfully!'
+      run: dotnet test
   
     - name: Cancel workflow if tests failed
       if: ${{ failure() }}
