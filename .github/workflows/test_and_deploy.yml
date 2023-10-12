@@ -9,7 +9,7 @@ on:
 
   
 jobs:
-  deploy:
+  testing:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
           workflow_filename: 'main.yml'
           workflow_cancel_message: 'Tests failed. Cancelling workflow.'
 
-    - name: start containerized backend appllication
+    - name: run containerized backend appllication
       working-directory: .
       run: docker-compose up -d
   
