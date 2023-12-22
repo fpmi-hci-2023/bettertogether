@@ -1,0 +1,6 @@
+@BetterTogetherBackend_HostAddress = http://localhost:5015
+
+GET {{BetterTogetherBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
