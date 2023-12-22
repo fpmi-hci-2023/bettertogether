@@ -8,6 +8,7 @@ public class Media
     
     public virtual ICollection<Genre> Genres { get; set; } 
     public virtual ICollection<User> FavouritesBy { get; set; }
+    public virtual ICollection<User> PlannedBy { get; set; }
     public virtual ICollection<Watched> Watched { get; set; }
     public virtual ICollection<Rating> Ratings { get; set; }
     public virtual ICollection<Comment> Comments { get; set; }
